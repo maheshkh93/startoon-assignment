@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <div>
+        <h3>Enter Values</h3>
+        <form action="/" method="get" onsubmit="setValues()">
+        <input class="value" id="value1" placeholder="Input value" type="number">
+        <input class="value" id="value2" placeholder="Max value" type="number">
+    </form>
+    </div>
+    <br><br>
+    <div>
+        <h3>Graphs</h3>
+        <div>
+        <div class="level">
+            <div class="fullbar">
+                <div class="fillbar"></div>
+            </div>
+            <div></div>
+            <h4>Level 1</h4>
+        </div>
+        <div class="level">
+            <div class="circle">
+                <div class="fillcircle"></div>
+            </div>
+            <div></div>
+            <h4>Level 2</h4>
+        </div>
+        <div class="level">
+            <div class="fullbar">
+                <div class="fillbar"></div>
+            </div>
+            <div></div>
+            <h4>Level 3</h4>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script >
+        function setValues() {
+            let val = document.getElementsById("value1");
+            let maxval = document.getElementsById("value2");
+
+            alert("Input value should be less than Max value");
+        }
+    </script>
+</body>
+</html>

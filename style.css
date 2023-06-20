@@ -1,0 +1,47 @@
+.main{
+    margin-left: 15%;
+    padding: 50px;
+    width: 70%;
+    height: 500px;
+    box-shadow: 3px 3px 3px 3px ;
+}
+
+.value{
+    padding: 10px;
+    background-color: rgb(188, 223, 252);
+    border: none;
+}
+
+
+.level{
+    display: inline-block;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.fullbar{
+    
+    width: 60px;
+    height: 200px;
+    background-color: rgb(3, 118, 212);
+
+}
+
+.fillbar{
+    background-color: rgb(188, 223, 252);
+    height: 100%;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(3, 118, 212);
+}
+
+.fillcircle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:rgb(188, 223, 252);
+}
