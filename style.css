@@ -1,3 +1,8 @@
+:root{
+    --barPercentage: 100%;
+    --circleAngle: 0deg;
+}
+
 .main{
     margin-left: 15%;
     padding: 50px;
@@ -12,36 +17,39 @@
     border: none;
 }
 
-
 .level{
     display: inline-block;
     text-align: center;
     margin-right: 100px;
 }
 
-.fullbar{
+.bar{
     
     width: 60px;
     height: 200px;
     background-color: rgb(3, 118, 212);
-
 }
 
 .fillbar{
     background-color: rgb(188, 223, 252);
-    height: 100%;
+    height: var(--barPercentage);    
 }
 
-.circle{
+.bar1{
+    width: 60px;
+    height: 200px;
+    background: linear-gradient(rgb(188, 223, 252) var(--barPercentage), rgb(3, 118, 212) );
+}
+
+.circle {
+    margin-top: 0px;
+    display: block;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: rgb(3, 118, 212);
+    background-image: conic-gradient(from 90deg,
+        rgb(3, 118, 212) 0 var(--circleAngle), 
+        rgb(188, 223, 252) 0deg);
 }
 
-.fillcircle{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color:rgb(188, 223, 252);
-}
+

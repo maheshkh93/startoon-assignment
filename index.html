@@ -11,46 +11,52 @@
     <div class="main">
     <div>
         <h3>Enter Values</h3>
-        <form action="/" method="get" onsubmit="setValues()">
-        <input class="value" id="value1" placeholder="Input value" type="number">
-        <input class="value" id="value2" placeholder="Max value" type="number">
-    </form>
+    
+            <input 
+                class="value" 
+                id="value1" 
+                type="number"
+                placeholder="Max Value"
+                onchange="setValues()"
+                >
+            <input 
+                class="value" 
+                id="value2" 
+                type="number"
+                placeholder="Input Value"
+                onchange="setValues()"
+                >
+    
     </div>
     <br><br>
     <div>
         <h3>Graphs</h3>
         <div>
         <div class="level">
-            <div class="fullbar">
-                <div class="fillbar"></div>
+            <div class="bar">
+                <div class="fillbar" id="fillbar"></div>
             </div>
-            <div></div>
+            <div class="percentage">0%</div>
             <h4>Level 1</h4>
         </div>
         <div class="level">
             <div class="circle">
-                <div class="fillcircle"></div>
+                
             </div>
-            <div></div>
+            <div class="percentage">0%</div>
             <h4>Level 2</h4>
         </div>
         <div class="level">
-            <div class="fullbar">
+            <div class="bar1">
                 <div class="fillbar"></div>
             </div>
-            <div></div>
+            <div class="percentage">0%</div>
             <h4>Level 3</h4>
         </div>
         </div>
     </div>
     </div>
-    <script >
-        function setValues() {
-            let val = document.getElementsById("value1");
-            let maxval = document.getElementsById("value2");
-
-            alert("Input value should be less than Max value");
-        }
+    <script src="/app.js">
     </script>
 </body>
 </html>
